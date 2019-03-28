@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1553638783236.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2839416339",
+    "id" : "119E5594",
+    "lastKnownWriteTime" : 1553638885,
+    "last_content_update" : 1553638885524,
+    "path" : "C:/Users/slrose/R/2019_Combie_LoadsData_WY2018/Sites/CR1D_390106121021201/rloadest/1_TSS/TSS_CR1D_RScript.R",
+    "project_path" : "TSS_CR1D_RScript.R",
+    "properties" : {
+        "cursorPosition" : "82,68",
+        "scrollLine" : "56"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
