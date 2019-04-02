@@ -57,27 +57,28 @@ TSS_CR1Am9
 #print(TSS_CR1Am9,brief = FALSE, load.only = FALSE)
 #Commenting these out. These provide some explanations of the data in a longer form. Brief results are printed to console (TSS_CR1Am1-9)
 
-plot(TSS_CR1Am9,ann=FALSE)
-title(main = "390132121015201_m9_TSS Response vs Fitted Values",xlab = "Fitted Values",ylab = "Response Values")
-plot(TSS_CR1Am9,which = 2,set.up = F)
-title(main = "390132121015201_m9_TSS Residuals vs Fitted Values")
-plot(TSS_CR1Am9,which = 3,set.up = F)
-title(main = "390132121015201_m9_TSS Assessing Heteroscedasticity") 
-plot(TSS_CR1Am9,which = 4,set.up = F)
-title(main = "390132121015201_m9_TSS Correlogram of Samples")
-plot(TSS_CR1Am9,which = 5,set.up = F)
-title(main="390132121015201_m9_TSS Normal Discharge")
-plot(TSS_CR1Am9,which = 6,set.up = F)
-title(main="390132121015201_m9_TSS Box Plot of Loads")
+plot(TSS_CR1Am5,ann=FALSE)
+title(main = "390132121015201_m5_TSS Response vs Fitted Values",xlab = "Fitted Values",ylab = "Response Values")
+plot(TSS_CR1Am5,which = 2,set.up = F)
+title(main = "390132121015201_m5_TSS Residuals vs Fitted Values")
+plot(TSS_CR1Am5,which = 3,set.up = F)
+title(main = "390132121015201_m5_TSS Assessing Heteroscedasticity") 
+plot(TSS_CR1Am5,which = 4,set.up = F)
+title(main = "390132121015201_m5_TSS Correlogram of Samples")
+plot(TSS_CR1Am5,which = 5,set.up = F)
+title(main="390132121015201_m5_TSS Normal Discharge")
+plot(TSS_CR1Am5,which = 6,set.up = F)
+title(main="390132121015201_m5_TSS Box Plot of Loads")
 
 #These functions plot the data using the chosen best model and add a title and labels to the plot.
 
-TSS_CR1A_load<-predLoad(TSS_CR1Am9,CR1AQ,load.units="kg",by="water year",allow.incomplete = TRUE,conf.int = 0.95,print = TRUE)
-write.csv(TSS_CR1A_load,"1_CR1A_m9_TSS_Flux_Annual.csv")
-TSS_CR1A_load_day<-predLoad(TSS_CR1Am9, CR1AQ,load.units = "kg",by="day",allow.incomplete = TRUE,conf.int = 0.90,print = TRUE)
-write.csv(TSS_CR1A_load_day,"1_CR1A_m9_TSS_Flux_Daily.csv")
+TSS_CR1A_load<-predLoad(TSS_CR1Am5,CR1AQ,load.units="kg",by="water year",allow.incomplete = TRUE,conf.int = 0.95,print = TRUE)
+write.csv(TSS_CR1A_load,"1_CR1A_m5_TSS_Flux_Annual.csv")
+TSS_CR1A_load_day<-predLoad(TSS_CR1Am5, CR1AQ,load.units = "kg",by="day",allow.incomplete = TRUE,conf.int = 0.90,print = TRUE)
+write.csv(TSS_CR1A_load_day,"1_CR1A_m5_TSS_Flux_Daily.csv")
 
 #Lines 75 and 77 create data frames that use the function predLoad. 
 #Description of predLoad: Estimate loads from a rating-curve model from loadReg for a new data frame, aggregating the loads by specified time periods.
 #Lines 76 and 78 write the data frames to a .csv file. Important note: The file must be intentionally saved as a CSV file- type ".csv" at the end when prompted.
 #file.choose() lets the user select the location for the .csv files.
+

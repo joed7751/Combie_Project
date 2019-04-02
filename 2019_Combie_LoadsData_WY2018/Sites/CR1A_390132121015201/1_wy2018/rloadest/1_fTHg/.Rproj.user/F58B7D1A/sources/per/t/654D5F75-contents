@@ -57,25 +57,25 @@ fTHg_CR1Am9
 #print(fTHg_CR1Am9,brief = FALSE, load.only = FALSE)
 #Commenting these out. These provide some explanations of the data in a longer form. Brief results are printed to console (fTHg_CR1Am1-9)
 
-plot(fTHg_CR1Am2,ann=FALSE)
-title(main = "390132121015201_m2_fTHg Response vs Fitted Values",xlab = "Fitted Values",ylab = "Response Values")
-plot(fTHg_CR1Am2,which = 2,set.up = F)
-title(main = "390132121015201_m2_fTHg Residuals vs Fitted Values")
-plot(fTHg_CR1Am2,which = 3,set.up = F)
-title(main = "390132121015201_m2_fTHg Assessing Heteroscedasticity") 
-plot(fTHg_CR1Am2,which = 4,set.up = F)
-title(main = "390132121015201_m2_fTHg Correlogram of Samples")
-plot(fTHg_CR1Am2,which = 5,set.up = F)
-title(main="390132121015201_m2_fTHg Normal Discharge")
-plot(fTHg_CR1Am2,which = 6,set.up = F)
-title(main="390132121015201_m2_fTHg Box Plot of Loads")
+plot(fTHg_CR1Am1,ann=FALSE)
+title(main = "390132121015201_m1_fTHg Response vs Fitted Values",xlab = "Fitted Values",ylab = "Response Values")
+plot(fTHg_CR1Am1,which = 2,set.up = F)
+title(main = "390132121015201_m1_fTHg Residuals vs Fitted Values")
+plot(fTHg_CR1Am1,which = 3,set.up = F)
+title(main = "390132121015201_m1_fTHg Assessing Heteroscedasticity") 
+plot(fTHg_CR1Am1,which = 4,set.up = F)
+title(main = "390132121015201_m1_fTHg Correlogram of Samples")
+plot(fTHg_CR1Am1,which = 5,set.up = F)
+title(main="390132121015201_m1_fTHg Normal Discharge")
+plot(fTHg_CR1Am1,which = 6,set.up = F)
+title(main="390132121015201_m1_fTHg Box Plot of Loads")
 
 #These functions plot the data using the chosen best model and add a title and labels to the plot.
 
-fTHg_CR1A_load<-predLoad(fTHg_CR1Am2,CR1AQ,load.units="kg",by="water year",allow.incomplete = TRUE,conf.int = 0.95,print = TRUE)
-write.csv(fTHg_CR1A_load,"1_CR1A_m2_fTHg_Flux_Annual.csv")
-fTHg_CR1A_load_day<-predLoad(fTHg_CR1Am2, CR1AQ,load.units = "kg",by="day",allow.incomplete = TRUE,conf.int = 0.90,print = TRUE)
-write.csv(fTHg_CR1A_load_day,"1_CR1A_m2_fTHg_Flux_Daily.csv")
+fTHg_CR1A_load<-predLoad(fTHg_CR1Am1,CR1AQ,load.units="kg",by="water year",allow.incomplete = TRUE,conf.int = 0.95,print = TRUE)
+write.csv(fTHg_CR1A_load,"1_CR1A_m1_fTHg_Flux_Annual.csv")
+fTHg_CR1A_load_day<-predLoad(fTHg_CR1Am1, CR1AQ,load.units = "kg",by="day",allow.incomplete = TRUE,conf.int = 0.90,print = TRUE)
+write.csv(fTHg_CR1A_load_day,"1_CR1A_m1_fTHg_Flux_Daily.csv")
 
 #Lines 75 and 77 create data frames that use the function predLoad. 
 #Description of predLoad: Estimate loads from a rating-curve model from loadReg for a new data frame, aggregating the loads by specified time periods.
