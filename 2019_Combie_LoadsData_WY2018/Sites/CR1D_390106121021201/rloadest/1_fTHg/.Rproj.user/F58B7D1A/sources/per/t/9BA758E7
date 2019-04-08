@@ -5,15 +5,15 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "4070474066",
+    "hash" : "1691760896",
     "id" : "9BA758E7",
-    "lastKnownWriteTime" : 1553639102,
-    "last_content_update" : 1553639102470,
+    "lastKnownWriteTime" : 1554326807,
+    "last_content_update" : 1554326807,
     "path" : "C:/Users/slrose/R/2019_Combie_LoadsData_WY2018/Sites/CR1D_390106121021201/rloadest/1_fTHg/fTHg_CR1D_RScript.R",
     "project_path" : "fTHg_CR1D_RScript.R",
     "properties" : {
-        "cursorPosition" : "82,68",
-        "scrollLine" : "56"
+        "cursorPosition" : "77,61",
+        "scrollLine" : "53"
     },
     "relative_order" : 1,
     "source_on_save" : false,

@@ -81,3 +81,6 @@ write.csv(fTHg_CR1D_load_day,"1_CR1D_m1_fTHg_Flux_Daily.csv")
 #Description of predLoad: Estimate loads from a rating-curve model from loadReg for a new data frame, aggregating the loads by specified time periods.
 #Lines 76 and 78 write the data frames to a .csv file. Important note: The file must be intentionally saved as a CSV file- type ".csv" at the end when prompted.
 #file.choose() lets the user select the location for the .csv files.
+
+
+
